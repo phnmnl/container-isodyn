@@ -1,4 +1,4 @@
-![Logo](text3923.png)
+![Logo](figs/text3923.png)
 
 # IsoDyn
 Version: 1.0
@@ -22,8 +22,7 @@ Version: 1.0
 
 ## Approaches
 
-- Isotopic Labelling Analysis
-    - 13C
+- Isotopic Labelling Analysis / 13C
     
 ## Data Analysis
 
@@ -37,7 +36,7 @@ Version: 1.0
 
 - screenshot of input data (format Metabolights), output is the same format with one more column added: corrected mass spectrum
 
-![screenshot](Screenshot.png)
+![screenshot](figs/Screenshot.png)
 
 ## Tool Authors
 
