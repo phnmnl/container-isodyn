@@ -1,4 +1,4 @@
-![Logo](figs/text3923.png)
+![Logo](text3923.png)
 
 # IsoDyn
 Version: 1.0
