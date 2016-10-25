@@ -1,8 +1,10 @@
-![Logo](text3923.png)
+![Logo](figs/text3923.png)
 
 # IsoDyn
 Version: 1.0
-## “C++”-program that uses a kinetic model simulating the reactions in central metabolic network to calculate the dynamic of isotopic isomers spectra of metabolites.
+## Short Description
+
+“C++”-program simulating the dynamics of metabolites and their isotopic isomers reactions in central metabolic network using kinetic model
 
 ## Description
 
