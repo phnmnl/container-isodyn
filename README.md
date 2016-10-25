@@ -1,4 +1,4 @@
-![Logo](text3923.png)
+![Logo](figs/text3923.png)
 
 # IsoDyn
 Version: 1.0
@@ -12,7 +12,7 @@ Version: 1.0
 
 ## Key features
 
-- simulation of 13C mass isotopomer data obtained with GCMS, and corrected for natural occurring iso
+- simulation of concentrations of 13C isotopomers originated from artificially 13C enriched substrates, obtained using mass spectrometry and corrected for natural occurring isotopes and peaks overlapping
 
 ## Functionality
 
@@ -36,7 +36,7 @@ Version: 1.0
 
 - screenshot of input data (format Metabolights), output is the same format with one more column added: corrected mass spectrum
 
-![screenshot](Screenshot.png)
+![screenshot](figs/Screenshot.png)
 
 ## Tool Authors
 
