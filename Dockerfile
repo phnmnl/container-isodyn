@@ -14,6 +14,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends gfortran make g
     apt-get purge -y git gfortran make g++ ca-certificates && \
     apt-get install -y --no-install-recommends libgfortran3 && \
     apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
-    rm -rf isodyn 
+    rm -rf isodyn
+
+COPY runTest1.sh /usr/local/bin/runTest1.sh
+RUN chmod a+x /usr/local/bin/runTest1.sh 
 
 ENTRYPOINT ["isodyn"]
