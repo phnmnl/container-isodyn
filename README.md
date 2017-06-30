@@ -58,27 +58,36 @@ Version: 1.0
 
 - 1) As independent program. IsoDyn only requires compillation. Standing in the IsoDyn directory enter the commands:
   
-'''  make clean '''
+```
+  make clean 
 
-'''  make '''
+  make 
+```
   
   
 - 2) As Docker image. To create the Docker container: 
      - go to the directory where the dockerfile is;
      - create container from dockerfile
-''' sudo docker build -t isodyn:0.1 . '''
+     
+```
+ sudo docker build -t isodyn:0.2 . 
+```
 
 ## Usage Instructions
 
   To run IsoDyn independently: standing in the MIDcor directory inside R environment, after reading the sources execute the command:
  
- ''' ./isodyn.out file_with_parameters, experimental_data_file  '''
+```
+ ./isodyn.out file_with_parameters, experimental_data_file
+```
  
   in the provided example parameters file is "1", experimental_data_file is "mglc"
  
   To run MIDcor as a docker image, execute
  
- '''  sudo docker run -i -t -v $PWD:/data isodyn:0.1 -i file_with_parameters experimental_data_file '''
+```
+ sudo docker run -i -t -v $PWD:/data isodyn:0.1 -i file_with_parameters experimental_data_file 
+```
 
 ## Publications
 
