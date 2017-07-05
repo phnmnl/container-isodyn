@@ -4,10 +4,10 @@ apt-get update -y && apt-get install -y --no-install-recommends wget ca-certific
 
 
 # Download data
-wget "https://drive.google.com/uc?export=download&id=0B7S2ZMhdzWwbSVNFSlZvcGtESUk" -O input_parameters.txt
-wget "https://drive.google.com/uc?export=download&id=0B7S2ZMhdzWwbRnA1dUpzYlNNMjQ" -O midcor_output.csv 
+wget "https://drive.google.com/uc?export=download&id=0B1lAg6jyw6lvakpXc1JaU0I0Rlk" -O input_parameters.txt
+wget "https://drive.google.com/uc?export=download&id=0B1lAg6jyw6lvelNCbDhsc2VPRE0" -O midcor_output.csv 
 
-isodyn midcor_output.csv input_parameters.txt 20;
+isodyn midcor_output.csv input_parameters.txt 5;
 isodyn midcor_output.csv input_parameters.txt s
 
 # check that result file exists.
