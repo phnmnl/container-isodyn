@@ -106,7 +106,7 @@ sudo docker run -i -t -v $PWD:/data isodyn:0.2 /data/A549 /data/out/1 s
 - run test1 using the data that are in the file "ramidout.csv" in https://drive.google.com/drive/folders/0B1lAg6jyw6lvSlphUi1mdlUwUXM
  
 ```
-docker run -it --entrypoint=runTest1.sh isodyn:0.2 
+sudo docker run -it --entrypoint=runTest1.sh isodyn:0.2 
 ```
  
 ## Publications
