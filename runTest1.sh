@@ -6,7 +6,6 @@ apt-get update -y && apt-get install -y --no-install-recommends wget ca-certific
 # Download data
 wget "https://drive.google.com/uc?export=download&id=0B1lAg6jyw6lveHE3UDk3SVltNkU" -O input_parameters.txt
 wget "https://drive.google.com/uc?export=download&id=0B1lAg6jyw6lvYW5pS1RWb3Nwajg" -O midcor_output.csv 
-wget "https://drive.google.com/uc?export=download&id=0B1lAg6jyw6lvd1k0RGNrdWdLY2M" -O plkin.p
 
 isodyn midcor_output.csv input_parameters.txt 5;
 isodyn midcor_output.csv input_parameters.txt s
