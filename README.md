@@ -58,28 +58,57 @@ Version: 1.0
 
 - 1) As independent program. IsoDyn only requires compillation. Standing in the IsoDyn directory enter the commands:
   
-'''  make clean '''
+```
+  make clean 
 
-'''  make '''
+  make 
+```
   
   
 - 2) As Docker image. To create the Docker container: 
      - go to the directory where the dockerfile is;
      - create container from dockerfile
-''' sudo docker build -t isodyn:0.1 . '''
+     
+```
+ sudo docker build -t isodyn:0.2 . 
+```
 
 ## Usage Instructions
 
-  To run IsoDyn independently: standing in the MIDcor directory inside R environment, after reading the sources execute the command:
+  To run Isodyn, general form:
  
- ''' ./isodyn.out file_with_parameters, experimental_data_file  '''
- 
-  in the provided example parameters file is "1", experimental_data_file is "mglc"
- 
-  To run MIDcor as a docker image, execute
- 
- '''  sudo docker run -i -t -v $PWD:/data isodyn:0.1 -i file_with_parameters experimental_data_file '''
+```
+ sudo docker run -i -t -v $PWD:/data isodyn:0.2 <file_with_parameters> <experimental_data_file> [<integer_value> | s]
+```
+An example of a single simulation:
 
+```
+ sudo docker run -i -t -v $PWD:/data isodyn:0.2 /data/A549 /data/out/1 
+```
+
+screenshot of a simulation of input data, shown only for unlabeled fraction (m0)
+
+![screenshot](Screenshot.png)
+
+ 
+- performing optimization using Simulated Annealing algorithm minimizing χ2 and stop after saving 33 files with optimized parameters in the output directory:
+ 
+```
+sudo docker run -i -t -v $PWD:/data isodyn:0.2 /data/A549 /data/out/1 33
+```
+
+- Statistics for fluxes, saved in the files  "1", "2", etc, in the directory /out:
+
+```
+sudo docker run -i -t -v $PWD:/data isodyn:0.2 /data/A549 /data/out/1 s 
+```
+
+- run test1 using the data that are in the file "ramidout.csv" in https://drive.google.com/drive/folders/0B1lAg6jyw6lvSlphUi1mdlUwUXM
+ 
+```
+sudo docker run -it --entrypoint=runTest1.sh isodyn:0.2 
+```
+ 
 ## Publications
 
 - 1: Selivanov VA, Vizán P, Mollinedo F, Fan TW, Lee PW, Cascante M.

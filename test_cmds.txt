@@ -1,0 +1,3 @@
+which isodyn 
+which plkin.p
+which gnuplot
