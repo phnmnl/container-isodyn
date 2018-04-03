@@ -5,10 +5,10 @@ LABEL software.version="1.0"
 LABEL version="0.2"
 LABEL software="isodyn"
 
-ENV REVISION="494e2316c34b3f5a2e16490e0edb02b383f5c02e"
+ENV REVISION="bb99886ad60f8ec4085ccc730647678c71020cc2"
 
 RUN apt-get update && apt-get install -y --no-install-recommends gfortran make g++ gnuplot git ca-certificates && \
-    git clone --single-branch --branch master https://github.com/seliv55/isodyn.git && \
+    git clone --single-branch --branch v01 https://github.com/seliv55/isodyn.git && \
     git -C isodyn checkout $REVISION && \
     make --directory=isodyn clean && make --directory=isodyn && make --directory=isodyn install && \
     apt-get purge -y git gfortran make g++ ca-certificates && \
