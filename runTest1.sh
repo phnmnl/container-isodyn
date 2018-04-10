@@ -20,9 +20,9 @@ dokiso.sh
 dokiso.sh -S
 
 # check that result file exists.
-FLUXES_CONF=statfl
-METAB_CONFIDENCE=statpar
-CONC_PLOT=sconc.png
+FLUXES_CONF=glc/statfl
+#METAB_CONFIDENCE=statpar
+#CONC_PLOT=sconc.png
 
 
 for f in $FLUXES_CONF $METAB_CONFIDENCE $CONC_PLOT; do
