@@ -6,9 +6,9 @@ apt-get update -y && apt-get install -y --no-install-recommends wget ca-certific
 # Download data
 #wget "https://drive.google.com/uc?export=download&id=0B1lAg6jyw6lveHE3UDk3SVltNkU" -O input_parameters.txt
 #wget "https://drive.google.com/uc?export=download&id=0B1lAg6jyw6lvYW5pS1RWb3Nwajg" -O midcor_output.csv 
-wget "https://drive.google.com/uc?export=download&id=1AsD9w6MDy9ywj7J7DSHRpBiRgo2ozu5V" -O A549 
-wget "https://drive.google.com/uc?export=download&id=1JMB1lkaLvQmd5L2hRqzSCWS-HV5emoTl" -O xglc 
-wget "https://drive.google.com/uc?export=download&id=1iuKwaMt5pr_BOCRdrulTr32CygLugNzP" -O  glc.zip
+wget "https://drive.google.com/uc?export=download&id=167is8BvoQzXIl3p0-qumSWWuAS6US2eu" -O BEAS2B-Glucose 
+wget "https://drive.google.com/uc?export=download&id=1WA-n1qSRhn5kKxZqij-5Twa9LOqQRRWC" -O xglc1
+wget "https://drive.google.com/uc?export=download&id=1ydoQO27UpsdXrHy22JsJxYb-N9pAYplO" -O  glc.zip
 wget "https://drive.google.com/uc?export=download&id=1a62_0az2JojVKW9JgyVyOQg2EILw34Fa" -O  glut.zip
 
 unzip glc.zip
