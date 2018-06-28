@@ -5,10 +5,10 @@ LABEL software.version="1.0"
 LABEL version="0.2"
 LABEL software="isodyn"
 
-ENV REVISION="3246f9c67fc1f888be0cdf88e47d40c08ed12e12"
+ENV REVISION="af558454a1c3b56c6e7595dab5ef828ea93c1665"
 
 RUN apt-get update && apt-get install -y --no-install-recommends gfortran make g++ gnuplot git unzip ca-certificates && \
-    git clone --single-branch --branch develop https://github.com/seliv55/isodyn-frg.git && \
+    git clone --single-branch --branch develop https://github.com/seliv55/isodyn.git && \
     git -C isodyn checkout $REVISION && \
     make --directory=isodyn clean && make --directory=isodyn && make --directory=isodyn install && \
     apt-get purge -y git gfortran make g++ ca-certificates && \
@@ -17,6 +17,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends gfortran make g
     rm -rf isodyn
 
 COPY runTest1.sh /usr/local/bin/runTest1.sh
+COPY dokiso.sh /usr/local/bin/dokiso.sh
 RUN chmod a+x /usr/local/bin/runTest1.sh 
+RUN chmod a+x /usr/local/bin/dokiso.sh 
 
 ENTRYPOINT ["isodyn"]

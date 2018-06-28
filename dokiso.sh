@@ -1,6 +1,6 @@
 #!/bin/sh
-fiso=A549
-fcon=xglc
+fiso=BEAS2B-Glucose
+fcon=xglc1
 inpar="glc/1"
 oudir="glc/"
 fstat="glc/statfl"
