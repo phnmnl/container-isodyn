@@ -5,7 +5,7 @@ LABEL software.version="1.0"
 LABEL version="0.2"
 LABEL software="isodyn"
 
-ENV REVISION="0be8b32d4e54215b8a5a1a93ff50b179e13171b9"
+ENV REVISION="7e6313e43906a7347eea9310b6aef3c4f6c6cbea"
 
 RUN apt-get update && apt-get install -y --no-install-recommends gfortran make g++ gnuplot git unzip ca-certificates && \
     git clone --single-branch --branch develop https://github.com/seliv55/isodyn.git && \
