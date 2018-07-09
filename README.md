@@ -121,18 +121,18 @@ fi
 ```
   Here for the docker image the name /data/ is assigned to the current directory and all paths are considered respectively to the current directory. Using this script, the command for execution of the docker image with default values of parameters is 
 ```
- ./dokiso
+ ./dokiso.sh
 ```
 - performing optimization using Simulated Annealing algorithm minimizing χ2 and stop after saving 33 files with optimized parameters in the output directory:
  
 ```
- ./dokiso -F -m 33
+ ./dokiso.sh -F -m 33
 ```
 
 - Statistics for fluxes, saved in the files  "1", "2", etc, in the directory /out, saving the result in ./abc/efg.csv:
 
 ```
- ./dokiso -S -s /data/abc/efg.csv
+ ./dokiso.sh -S -s /data/abc/efg.csv
 ```
 
 - run test1 using the script presented inthe directory of dockerfile and data uploaded to https://drive.google.com/drive/u/0/folders/0B1lAg6jyw6lvUkQ5V05LRGpuS0E
