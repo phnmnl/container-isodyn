@@ -2,10 +2,10 @@
 fiso=BEAS2B-Glucose
 fcon=xglc1
 inpar="glc/1"
-oudir="glc/"
+oudir="glc"
 fstat="glc/statfl"
 fcmpr="glut/statfl"
-manfi=77
+manfi=2
 FNCKAS="0"
 tst=yes
 
