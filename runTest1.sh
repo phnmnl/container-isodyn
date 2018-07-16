@@ -10,17 +10,13 @@ wget "https://drive.google.com/uc?export=download&id=167is8BvoQzXIl3p0-qumSWWuAS
 wget "https://drive.google.com/uc?export=download&id=1mnKcKKRTFHmqyb1aGMUHB8FSiTZ1vPrc" -O SW620-Glucose 
 wget "https://drive.google.com/uc?export=download&id=1WA-n1qSRhn5kKxZqij-5Twa9LOqQRRWC" -O xglc1
 wget "https://drive.google.com/uc?export=download&id=1jPMHA6OjcTWR4l3qcqt-c6g_9scBV9w4" -O xglc
-wget "https://drive.google.com/uc?export=download&id=1ydoQO27UpsdXrHy22JsJxYb-N9pAYplO" -O  glc.zip
-wget "https://drive.google.com/uc?export=download&id=1a62_0az2JojVKW9JgyVyOQg2EILw34Fa" -O  glut.zip
+wget "https://drive.google.com/uc?export=download&id=11USjmMbbcFrwgUjdc6VxYQJSH0FM2JTG" -O  glc.zip
 
 unzip glc.zip
-unzip glut.zip
 
 #isodyn midcor_output.csv input_parameters.txt 5;
 #isodyn midcor_output.csv input_parameters.txt s
-dokiso.sh 
-dokiso.sh -a SW620-Glucose -b xglc
-dokiso.sh -S
+dokiso.sh -a SW620-Glucose -b xglc -C
 
 # check that result file exists.
 FLUXES_CONF=glc/statfl
